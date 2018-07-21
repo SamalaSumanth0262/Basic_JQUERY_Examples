@@ -1,0 +1,25 @@
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+		$(document).ready(function(){
+			$("#division").click(function(){
+				$(this).replaceWith("<h1>New text is here....</h1>");
+			});
+		});
+    </script>
+    <style>
+    	#division
+    	{
+    		width: 50px;height: 50px;
+    		background-color: tan;
+    	}
+    </style>
+</head>
+<body>
+		<p id="paragraph">Click on the Square</p>
+		<div id="division">
+			Im in square
+		</div>
+</body>
+</html>

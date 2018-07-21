@@ -1,0 +1,30 @@
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("div").bind('click',function(event){
+                alert("hi div is pressed");
+                alert("Event type is:"+event.type);
+                alert("PageX is :"+event.pageX);
+                alert("pageY is :"+event.pageY);
+                alert("target is :"+event.target.innerHTML);
+            });
+        });
+    </script>
+    <style>
+        .div
+        {
+            margin: 2px;
+            width: 10px ;
+            height:10px;
+            border:2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <p>Click on the colors: </p>
+    <div class="div" style="background-color:red;"><p>First</p></div>
+    <div class="div" style="background-color: green;"><h1>Second</h1></div>
+    <div class="div" style="background-color: tan"><em>Third</em></div>
+</body>

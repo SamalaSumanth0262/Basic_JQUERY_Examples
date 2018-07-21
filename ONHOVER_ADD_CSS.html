@@ -1,0 +1,30 @@
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("div").hover(
+                function(){
+
+                $(this).css({"background-color":"green"});
+
+            },
+            function(){
+                $(this).css({"background-color":"tan"});
+            });
+            $("p").blur();
+        });
+    </script>
+    <style>
+    #division
+    {
+        background-color: red;
+        width: 50px;
+    }
+    </style>
+</head>
+<body>
+    <div id="division">Hover Me</div>
+    <p>THIS IS  A BIG PARAGRAPH........</p>
+</body>
+</html>

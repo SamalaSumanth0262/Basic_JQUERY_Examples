@@ -1,0 +1,27 @@
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+		$(document).ready(function(){
+			$("div").click(function(){
+				var content = $(this).html();
+				$("#result").text(content);
+			});
+		});
+    </script>
+    <style>
+    	#division
+    	{
+    		height:100px;
+    		width:100px;
+    	}
+    </style>
+</head>
+<body>
+		<p>Click on the Square </p>
+		<span id="result"></span>
+		<div id="division" style="background-color: blue">
+			this is a blue square
+		</div>  
+</body>
+</html>
